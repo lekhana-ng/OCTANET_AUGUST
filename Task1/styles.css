@@ -1,0 +1,229 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #333;
+    line-height: 1.6;
+}
+
+.logo {
+    width: 100px ;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 8px;
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-image: url("https://leannematthewsyr3.wordpress.com/wp-content/uploads/2012/05/a.jpg");
+    color: #fff;
+    padding-top: 30px;
+    height: 40vh;
+    border-bottom: #77A6F7 3px solid;
+    display: flex;
+    align-items: space-evenly;
+
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 30px;
+        color: white;
+        border-radius: 10px;
+        padding: 20px;
+        background-color: black;
+    }
+
+.header-content {
+    text-align: center;
+    background-color: #333;
+    color: whitesmoke;
+}
+
+.header-content h1 {
+    font-size: 50px;
+    color: whitesmoke;
+}
+.me{
+    background-color: #333;
+}
+.me2 a{
+    display: inline;
+    text-decoration: none;
+    justify-content: space-between;
+    text-align: center;
+   
+}
+
+.cta-btn {
+    display: inline-block;
+    color: #77A6F7;
+
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-btn:hover {
+    background: #5691e1;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 0;
+    background-image: url("https://i.pinimg.com/originals/29/1d/aa/291daab86e5b36d806381740c8a0dbe3.jpg");
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.feature-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    flex-basis: 30%;
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    background: #f4f4f4;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background: #77A6F7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #5691e1;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 3s ease-in-out;
+}
+
+.animate-slideUp {
+    animation: slideUp 1s ease-in-out;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .navbar a {
+        padding: 0 10px;
+    }
+
+    .features-grid {
+        flex-direction: column;
+    }
+
+    .feature-item {
+        flex-basis: 100%;
+    }
+
+    .header-content h1 {
+        font-size: 36px;
+    }
+
+    .cta-btn {
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .header-content h1 {
+        font-size: 28px;
+    }
+}
